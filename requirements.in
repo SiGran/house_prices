@@ -1,0 +1,8 @@
+jupyter
+pandas
+pathlib2
+scikit-learn
+matplotlib
+plotly
+jupyter-dash
+orjson
