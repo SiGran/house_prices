@@ -7,11 +7,17 @@ from data_handling import test_model
 from plotting import plot_performance
 def model_selection(x_train, y_train, x_test, y_test, model, data_option, pca_option, n_components, df_results):
     """
-
-    :param train: training data set
-    :param test:
+    Selects and trains the model
+    :param x_train: train data set
+    :param y_train: train target
+    :param x_test: test data set
+    :param y_test: test target
     :param model: type of model
-    :return:
+    :param data_option: type of data scaling used
+    :param pca_option: type of pca used
+    :param n_components: number of components
+    :param df_results: dataframe to store results
+    :return: dataframe with results
     """
 
     if model == 'linearregression':

@@ -4,7 +4,7 @@ from sklearn.metrics import explained_variance_score, max_error, mean_absolute_p
 
 def get_data(data_option):
     """
-
+    get the data set from file system
     :param data_option: 'no_scaled', 'minmax', 'robust'
     :return: train, test data set
     """
@@ -25,11 +25,11 @@ def get_data(data_option):
 
 def test_model(x_test, y_test, fitted_model):
     """
-
-    :param test:
-    :param fitted_model:
-
-    :return:
+    Tests the performance of the model
+    :param x_test: test data set
+    :param y_test: test target
+    :param fitted_model: fitted model
+    :return: dict with errors and predictions
     """
 
     # Predict and determine errors

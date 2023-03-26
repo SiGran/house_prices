@@ -2,6 +2,16 @@ from pathlib2 import Path
 
 import plotly.graph_objects as go
 def plot_performance(y_test, y_pred, model, data_option, pca_option, n_components):
+    """
+    Plotting the predicted values with the actual values
+    :param y_test: actual values
+    :param y_pred: predicted values
+    :param model: type of model
+    :param data_option: type of data
+    :param pca_option: type of pca
+    :param n_components: number of components
+    :return:
+    """
     # Plotting the predicted values with the actual values
     test_indices = [i for i in range(len(y_test))]
     # Create figure and traces

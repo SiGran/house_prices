@@ -9,6 +9,7 @@ from pca import reduce_components
 from models import model_selection
 
 
+# options to consider for best model
 data_options = ['no_scaled', 'minmax', 'robust']
 pca_options = ['no_pca', 'pca']
 list_n_components = [3, 5, 7, 9, 11]
@@ -16,6 +17,8 @@ models = ['linearregression', 'elasticnet', 'lasso', 'ridge', 'randomforest']
 
 df_results = pd.DataFrame(columns=['model', 'data_option', 'pca_option', 'n_components', 'explained_variance_score', 'max_error',
                                    'mean_absolute_percentage_error', 'mean_absolute_error', 'mean_squared_error',  'r2_score'])
+
+# Loop over all options and train models
 for data_option in data_options:
     train, test = get_data(data_option)
     for pca_option in pca_options:
