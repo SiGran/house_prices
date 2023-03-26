@@ -18,5 +18,5 @@ def reduce_components(train, test, pca_option, n_components):
         x_test = test.drop(columns=['price'])
     else:
         raise ValueError('pca_option not valid')
-    
+
     return x_train, x_test
