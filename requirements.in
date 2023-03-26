@@ -6,3 +6,5 @@ matplotlib
 plotly
 jupyter-dash
 orjson
+folium
+kaleido
