@@ -1,14 +1,14 @@
 # Predicting prices of houses
 In this project we have a dataset with transactional data from houses in Beijing. 
 The goal is to predict the price of a house for transactions in 2017 and onwards, 
-based on the transactions before that period. Data description is in the task.pdf file.
+based on the transactions before that period. The data can be found here: https://www.kaggle.com/datasets/ruiqurm/lianjia
 
 ### Quick Start
 1. requirements.txt has all the required packages.
     - compiled from requirements.in using pip-tools
     - Written using Python 3.11.2
     - All the code can be run using a virtualenv and installing the requirements.txt
-2. Place the `Dataset.csv` in the data folder.
+2. Download the dataset (https://www.kaggle.com/datasets/ruiqurm/lianjia), name it `Dataset.csv` and place it in in the data folder.
 3. Order of operations:
    1. Run exploration.ipynb <-- pre processes the data
    2. Run visualization.ipynb <-- visualization, more pre-processing and some feature engineering
